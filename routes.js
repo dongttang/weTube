@@ -1,5 +1,5 @@
 // Global
-const HOME = "/";
+const ROOT = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
@@ -18,7 +18,7 @@ const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit"
 
 const routes = {
-    home: HOME,
+    root: ROOT,
     join: JOIN,
     login: LOGIN,
     logout: LOGOUT,

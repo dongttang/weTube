@@ -1,11 +1,11 @@
 import express from "express";
 import routes from "../routes"
-import { home, search } from "../controllers/videoController";
+import { root, search } from "../controllers/videoController";
 import { join, login, logout } from "../controllers/userController";
 
 const globalRouter = express.Router();
 
-globalRouter.get(routes.home, home);
+globalRouter.get(routes.root, root);
 globalRouter.get(routes.search, search);
 
 globalRouter.get(routes.join, join);

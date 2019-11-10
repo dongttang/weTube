@@ -16,7 +16,7 @@ app.use(bodyParser.text({ extended: true }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.use("/", globalRouter);
+app.use(routes.root, globalRouter);
 app.use(routes.user, userRouter);
 app.use(routes.video, videoRouter);
 
