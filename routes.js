@@ -8,14 +8,15 @@ const SEARCH = "/search";
 // User
 const USER = "/user";
 const USER_DETAIL = "/:id";
-const EDIT_PROFILE = "/:id/edit-Profile"
-const CHANGE_PASSWORD = "/:id/change-password";
+const EDIT_PROFILE = "/edit-profile"
+const CHANGE_PASSWORD = "/change-password";
 
 // Videos
 const VIDEO = "/video";
 const VIDEO_UPLOAD = "/upload"
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit"
+const DELETE_VIDEO = "/:id/delete"
 
 const routes = {
     root: ROOT,
@@ -30,7 +31,8 @@ const routes = {
     video: VIDEO,
     videoUpload: VIDEO_UPLOAD,
     videoDetail: VIDEO_DETAIL,
-    editVideo: EDIT_VIDEO
+    editVideo: EDIT_VIDEO,
+    deleteVideo: DELETE_VIDEO
 }
 
 export default routes;
